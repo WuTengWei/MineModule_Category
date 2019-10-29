@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1DDDD2C461B296939B93DEF0 /* Pods_MineModule_Category_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MineModule_Category_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E5F16A262CDC57E65CF5355 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5E5F16A262CDC57E65CF5355 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MineModule_Category_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineModule_Category_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,11 +61,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		91302E28613B66B6C9AB4FA6 /* MineModule_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MineModule_Category.podspec; path = ../MineModule_Category.podspec; sourceTree = "<group>"; };
+		91302E28613B66B6C9AB4FA6 /* MineModule_Category.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MineModule_Category.podspec; path = ../MineModule_Category.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BEBC20BD930C34D6005090F4 /* Pods-MineModule_Category_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MineModule_Category_Example.debug.xcconfig"; path = "Target Support Files/Pods-MineModule_Category_Example/Pods-MineModule_Category_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C37CA840151BBDC6296294EE /* Pods-MineModule_Category_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MineModule_Category_Tests.release.xcconfig"; path = "Target Support Files/Pods-MineModule_Category_Tests/Pods-MineModule_Category_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D2D741023834E4FA4929784A /* Pods_MineModule_Category_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MineModule_Category_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDCE90459268D2569CA56282 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DDCE90459268D2569CA56282 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EE370D3A921896ACEB9D7FB9 /* Pods-MineModule_Category_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MineModule_Category_Example.release.xcconfig"; path = "Target Support Files/Pods-MineModule_Category_Example/Pods-MineModule_Category_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				60129FB41E39D3D78170010F /* Pods-MineModule_Category_Tests.debug.xcconfig */,
 				C37CA840151BBDC6296294EE /* Pods-MineModule_Category_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MineModule_Category_Example/Pods-MineModule_Category_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/MineModule_Category/MineModule_Category.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MineModule_Category.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

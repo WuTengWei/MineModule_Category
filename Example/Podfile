@@ -8,6 +8,7 @@ target 'MineModule_Category_Example' do
   target 'MineModule_Category_Tests' do
     inherit! :search_paths
 
-    
   end
+  
+  pod 'CTMediator'
 end
