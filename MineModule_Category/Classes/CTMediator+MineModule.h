@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CTMediator (MineModule)
-- (UIViewController *)MineModule_Mine_ViewControler;
+- (UIViewController *)MineModule_Mine_ViewControler:(NSDictionary *)params;
 @end
 
 NS_ASSUME_NONNULL_END

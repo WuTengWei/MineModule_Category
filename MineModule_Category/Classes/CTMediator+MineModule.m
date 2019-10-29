@@ -10,8 +10,8 @@
 
 @implementation CTMediator (MineModule)
 
-- (UIViewController *)MineModule_Mine_ViewControler {
-       UIViewController *controller = [self performTarget:@"MineModule" action:@"Mine_viewController" params:nil shouldCacheTarget:NO];
+- (UIViewController *)MineModule_Mine_ViewControler:(NSDictionary *)params {
+       UIViewController *controller = [self performTarget:@"MineModule" action:@"Mine_viewController" params:params shouldCacheTarget:NO];
      if ([controller isKindOfClass:[UIViewController class]]) {
          // view controller 交付出去之后，可以由外界选择是push还是present
          return controller;
